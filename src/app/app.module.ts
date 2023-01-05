@@ -3,14 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TodosComponent } from './MyComponets/todos/todos.component';
+import { TodoItemComponent } from './MyComponets/todo-item/todo-item.component';
+import { TodoAddComponent } from './MyComponets/todo-add/todo-add.component';
+import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './MyComponets/about/about.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodosComponent,
+    TodoItemComponent,
+    TodoAddComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
